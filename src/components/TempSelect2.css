@@ -1,0 +1,43 @@
+.DocArea2 {
+  background-color: #f5f5f5;
+  width: 100%;
+  height: 100%;
+  padding-left: 5%;
+}
+.DocHead2 > h1 {
+  padding: 40px 0px;
+  color: #777777;
+}
+.DocArea2 .DocList2 > ul {
+  list-style-type: none;
+  font-size: 20px;
+  font-family: "Open Sans";
+  padding-left: 0%;
+  line-height: 60px;
+}
+
+.DocList2 a {
+  text-decoration: none;
+  color: #003cc7;
+}
+.DocPreview2 {
+  display: flex;
+}
+.DocTemps2 {
+  margin: 2% 10%;
+  background-color: #ffffff;
+  margin-bottom: 30px;
+  padding: 25px 50px;
+  border-radius: 20px;
+}
+.DocTemps2 > ul {
+  list-style-type: none;
+  font-size: 15px;
+  font-family: "Open Sans";
+  padding-left: 0%;
+  line-height: 50px;
+}
+.DocTemps2 a {
+  text-decoration: none;
+  color: #003cc7;
+}

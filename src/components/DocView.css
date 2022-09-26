@@ -1,0 +1,39 @@
+.DocArea {
+  background-color: darkredgray;
+  width: 100%;
+  height: 100%;
+}
+
+.DocContainer {
+  height: 280px;
+  width: 200px;
+  background-color: aliceblue;
+  margin-left: 25%;
+  margin-top: 10%;
+}
+
+.DocButtons {
+  margin-left: 25%;
+  margin-top: 5%;
+}
+.DocButtons #decline {
+  background-color: #fe9090;
+  border-radius: 10px;
+  border-style: none;
+  margin-left: 15px;
+  padding: 0px 12px;
+}
+.DocButtons #accept {
+  background-color: #5eda6e;
+  border-radius: 10px;
+  border-style: none;
+  margin-left: 15px;
+  padding: 0px 15px;
+}
+.DocTemp {
+  height: 50vh;
+  width: 95%;
+  background-color: aliceblue;
+  border-radius: 30px;
+  margin: 20px;
+}
