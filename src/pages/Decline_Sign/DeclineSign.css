@@ -1,0 +1,63 @@
+
+.Decline{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    height: 100vh;  
+}
+
+.doc img{
+    width: 16%;
+}
+
+.btns .decline-btn{
+    background-color: #FE9090;
+    color:white;
+}
+
+.accept-btn
+{
+    background-color: #5EDA6E;
+    color:white;
+}
+
+.main-btns .decline-btn{
+    background-color: #003CC7;
+    color:white;
+    border-radius: 5px;
+    padding: 3px 10px;
+}
+
+.reason textarea{
+    border: #70707069 2px solid;
+}
+
+
+.cancel-btn{
+    background-color: rgba(255, 255, 255, 0.642);
+    color:#AEAEAE;
+}
+
+.cancel-btn:hover{
+    background-color: rgba(130, 130, 130, 0.121);
+    color:#AEAEAE;
+}
+
+button{
+    border: none;   
+}
+
+.accept-btn,.btns .decline-btn{
+    padding: 3px 20px;
+    border-radius: 15px !important;
+}
+
+.main-btns{
+    display: flex;
+    gap: 100px;
+}
+
+.btns{
+    display: flex;
+    gap: 30px;
+}

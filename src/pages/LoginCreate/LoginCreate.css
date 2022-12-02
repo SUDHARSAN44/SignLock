@@ -1,0 +1,88 @@
+.logo{
+    width: 190px;
+    height: 99px;
+}
+
+.container{
+    width: 100%;
+}
+
+.background img{
+    width: 85% !important;
+}
+
+.background{
+    display: flex;
+    justify-content: center;
+    width: 50% !important;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50% !important
+}
+
+.create{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container-create{
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+}
+
+.create-new-button{
+    border-radius: 60px !important;
+    font-family: Open Sans !important;
+    font-weight: semibold !important;
+    font-size: 21px !important;
+    background-color: #003CC7 !important;
+    text-transform: none !important;
+    /* padding:5px 50px !important; */
+}
+
+.login > Button{
+    text-transform: none !important;
+    font-family: Open Sans !important;
+    font-weight: bold !important;
+    font-size: 21px !important;
+}
+
+.create-new-button{
+    background-color: #003CC7;
+    border: none;
+    color:#F5F5F5;
+    width: fit-content;
+    padding: 7px 30px 7px 30px;
+    margin-top: 30px !important;
+    border-radius: 40px !important;
+    margin-bottom: 40px;
+}
+
+.login-btn{
+    background-color: #fff !important;
+    border: none;
+    color: #003CC7;
+    border-radius: 40px;
+    padding: 5px 20px;
+}
+
+.login-btn:hover
+{
+    background-color: #003cc721 !important;
+}
+
+@media screen and (max-width: 600px){
+    .background img{
+        display: none;
+    }
+    .create{
+        height: 70vh;
+    }
+}

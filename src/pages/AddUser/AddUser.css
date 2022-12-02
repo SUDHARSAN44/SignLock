@@ -1,0 +1,105 @@
+.add-user{
+    /* width: 100vw; */
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 2%;
+}
+
+.add-user-c1{
+    padding: 30px;
+
+    }
+
+.add-user-c1 form
+{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.add-user-c1 h2{
+    color:#003CC7;
+    font-weight: 1000;
+    margin-bottom: 10%;
+}
+
+.name{
+    padding: 0px !important;
+    justify-content: space-between !important   ;
+}
+
+.form-floating > label{
+    color: #B6B6B6;
+    height: fit-content !important;
+}
+
+.bg-img{
+    width: 50% !important;
+}
+
+.bg-img img
+{
+    object-fit: cover !important;
+    width: 100%;
+}
+
+.form-check{
+    font-size: small;
+    font-weight: 500;
+}
+
+.form-check-input{
+    /* width: 12px !important;
+    height: 12px !important; */
+    transform: scale(0.7);
+    
+    /* border-radius: 0px !important; */
+}
+
+.form-check{
+    display: flex;
+
+}
+
+.form-check-label{
+    margin-top: -30px;
+}
+
+
+
+.create-btn{
+    background-color: #003CC7;
+    color:white;
+    padding: 3px 17px;
+    border-radius: 20px;
+    width: fit-content !important;
+}
+
+.form-floating input{
+    height: 50px !important;
+}
+
+
+@media only screen and (max-width: 600px){
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .name .form-floating{
+        width: 100% !important;
+    }
+    .add-user-c1 form{
+        justify-content: center !important;
+        align-items: center !important;
+    }
+    .add-user-c1 {
+        justify-content: center !important;
+        align-items: center !important;
+    }
+    .bg-img
+    {
+        display: none;
+    }
+}

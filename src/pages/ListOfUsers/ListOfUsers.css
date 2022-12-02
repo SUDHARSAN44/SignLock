@@ -1,0 +1,171 @@
+.page{
+  display: flex;
+  flex-direction: column;
+}
+
+.body{
+  display: flex;
+  /* width: 100vw !important; */
+  justify-content: space-between;
+}
+
+.list-of-users{
+    width: 400px;
+    margin-left: 40px;
+
+}
+.list-of-user{
+    background-color: #F5F5F5;
+    width: 100%;
+    padding: 40px;
+    /* height: 91.6vh !important; */
+    min-height: 725px;
+
+}
+
+
+.row{
+    width: 100%;
+ 
+}
+
+.card-group{
+    
+    flex-direction: column !important;
+    gap:20px;
+}
+
+.card{
+    padding:10px !important ;
+    border: #70707047 2px solid !important;
+    border-radius: 25px !important;
+}
+
+.card-row{
+    gap: 10px;
+}
+
+.profile-img{
+    margin: auto !important;
+    width: 70px !important;
+    height: 70px !important;
+    padding: 0px !important ;
+}
+
+.prof-img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50% !important;
+    object-fit: cover;
+}
+
+.name,.form-name,.date-time{
+    padding: 0px !important;
+    margin:0px 0px !important;
+}
+
+
+.name{
+    color: #00000096;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.form-name{
+    color: #002D97;
+    font-size:15px;
+}
+
+.date-time{
+    font-size: 10px;
+}
+
+.on-off-btn{
+    margin: auto !important;
+}
+
+
+
+
+
+
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 35px;
+    height: 17px;
+  }
+  
+  .switch input {display:none;}
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ca2222;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 10px;
+    width: 10px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2ab934;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(45px);
+    -ms-transform: translateX(45px);
+    transform: translateX(17px);
+  }
+  
+  /*------ ADDED CSS ---------*/
+  .on
+  {
+    display: none;
+  }
+  
+  .on, .off
+  {
+    color: white;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    font-size: 10px;
+    font-family: Verdana, sans-serif;
+  }
+  
+  input:checked+ .slider .on
+  {display: block;}
+  
+  input:checked + .slider .off
+  {display: none;}
+  
+  /*--------- END --------*/
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;}
