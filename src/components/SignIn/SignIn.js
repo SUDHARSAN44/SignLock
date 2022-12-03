@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 import { Link, navigate } from '@reach/router';
 import { auth, signInWithGoogle } from '../../firebase/firebase';
+import img from '../../images/createAccount.jpg'; 
+import logo from '../../images/singlock.png'
+import './SIgnIn.css'
+
 import {
   Box,
   Button,
@@ -26,68 +30,24 @@ const SignIn = () => {
 
   return (
     <div>
-      <Box padding={3}>
-        <Container>
-          <Box padding={3}>
-            {error !== null && <Toast text={error} />}
-            <Heading size="md">Sign in</Heading>
-          </Box>
-          <Box padding={2}>
-            <TextField
-              id="email"
-              onChange={event => setEmail(event.value)}
-              placeholder="Enter your email"
-              label="Email"
-              value={email}
-              type="email"
-            />
-          </Box>
-          <Box padding={2}>
-            <TextField
-              id="password"
-              onChange={event => setPassword(event.value)}
-              placeholder="Enter your password"
-              label="Password"
-              value={password}
-              type="password"
-            />
-          </Box>
-          <Box padding={2}>
-            <Button
-              onClick={event => {
-                signInWithEmailAndPasswordHandler(event, email, password);
-                navigate('/');
-              }}
-              text="Sign in"
-              color="blue"
-              inline
-            />
-          </Box>
+        <div className='container-fluid logo' >
+      <img src={logo} alt=""  />
+    </div>
 
-          <Box padding={2}>
-            <Text>or</Text>
-          </Box>
-          <Box padding={2}>
+
+    <div class="row justify-content-center align-items-center g-2">
+      <div class="col-sm-6 create-img">
+      <img src={img} alt="" />
+      </div>
+ 
+      <div class="col create-form  p-0">
+        
+  
             <Button onClick={signInWithGoogle} text="Sign in with Google" color="red" inline />
-          </Box>
-          <Box padding={2}>
-            <Text>Don't have an account?</Text>
-          </Box>
-          <Box padding={2}>
-            <Link to="signUp" className="text-blue-500 hover:text-blue-600">
-              Sign up here
-            </Link>
-          </Box>
-          <Box padding={2}>
-            <Link
-              to="passwordReset"
-              className="text-blue-500 hover:text-blue-600"
-            >
-              Forgot Password?
-            </Link>
-          </Box>
-        </Container>
-      </Box>
+    
+      </div>
+    </div>
+     
     </div>
   );
 };

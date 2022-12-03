@@ -5,7 +5,7 @@ import Profile from './Profile/Profile';
 const AssignUsers = () => {
   return (
     <div>
-      <Profile />
+      
       <Assign />
     </div>
   );

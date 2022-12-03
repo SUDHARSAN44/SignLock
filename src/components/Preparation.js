@@ -5,7 +5,7 @@ import PrepareDocument from './PrepareDocument/PrepareDocument';
 const Preparation = () => {
   return (
     <div>
-      <Profile />
+  
       <PrepareDocument />
     </div>
   );

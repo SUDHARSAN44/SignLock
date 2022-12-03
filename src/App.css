@@ -1,3 +1,41 @@
 .App {
   text-align: center;
 }
+
+.logo{
+  width: 100px;
+  /* height: 40px; */
+}
+
+.split{
+  width: 100%;
+  min-height: 87vh;
+}
+
+.second{
+  width: 100% !important;
+  background-color: rgba(233, 231, 231, 0.375);
+  /* padding: 30px; */
+  /* align-items: center;
+  display: flex;
+  justify-content: center; */
+}
+
+.gpV{
+  background-color: white !important; 
+}
+/* 
+Button{
+  background-color: #003CC7 !important;
+  border: none;
+  color:#F5F5F5 !important;
+  width: 90px !important;
+  margin-top: 30px !important;
+  height: 35px !important;
+  border-radius: 40px !important;
+  margin-bottom: 10px !important;
+} */
+
+button{
+  height: fit-content !important;
+}

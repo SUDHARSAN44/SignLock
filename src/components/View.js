@@ -5,7 +5,6 @@ import ViewDocument from './ViewDocument/ViewDocument';
 const View = () => {
   return (
     <div>
-      <Profile />
       <ViewDocument />
     </div>
   );

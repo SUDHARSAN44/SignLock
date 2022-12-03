@@ -5,7 +5,6 @@ import SignDocument from './SignDocument/SignDocument';
 const Sign = () => {
   return (
     <div>
-      <Profile />
       <SignDocument />
     </div>
   );

@@ -16,6 +16,9 @@ import { auth, generateUserDocument } from './firebase/firebase';
 import { setUser, selectUser } from './firebase/firebaseSlice';
 
 import './App.css';
+import ProfilePage from './components/Profile/Profile';
+import SideBar from './components/SideBar/SideBar';
+import Routing from './Routing';
 
 const App = () => {
   const user = useSelector(selectUser);
@@ -31,26 +34,32 @@ const App = () => {
     });
   }, [dispatch]);
 
-  return user ? (
-    <div>
-      <Router>
-        <Welcome path="/" />
-        <AssignUsers path="/assignUsers" />
-        <Preparation path="/prepareDocument" />
-        <Sign path="/signDocument" />
-        <View path="/viewDocument" />
-      </Router>
-    </div>
-  ) : (
-    <div>
-      <Header />
-      <Router>
-        <SignIn path="/" />
-        <SignUp path="signUp" />
-        <PasswordReset path="passwordReset" />
-      </Router>
-    </div>
-  );
+  return (
+  //   <div>
+  //     <ProfilePage/>
+  //     <div className="container">
+  //       <SideBar/>
+  //       <Router>
+  //       <Welcome path="/" />
+  //       <AssignUsers path="/assignUsers" />
+  //       <Preparation path="/prepareDocument" />
+  //       <Sign path="/signDocument" />
+  //       <View path="/viewDocument" />
+  //     </Router>
+  //     </div>
+  //   </div>
+  // ) : (
+  //   <div>
+  //     <Header />
+  //     <Router>
+  //       <SignIn path="/" />
+  //       <SignUp path="signUp" />
+  //       <PasswordReset path="passwordReset" />
+  //     </Router>
+  //   </div>
+  // );
+  <Routing/>
+  ) 
 };
     
 export default App;

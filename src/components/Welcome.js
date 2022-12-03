@@ -19,36 +19,37 @@ const ProfilePage = () => {
   }, [dispatch]);
 
   return (
-    <div>
-      <Profile />
-      <Container>
-        <Box padding={3}>
-          <Heading size="md">{`Sign Documents`}</Heading>
-        </Box>
-        <Box padding={3}>
-          <SignList />
-        </Box>
-        <Box padding={3}>
-          <Heading size="md">{`Prepare Document`}</Heading>
-        </Box>
-        <Box padding={2}>
-          <Button
-            onClick={event => {
-              navigate(`/assignUsers`);
-            }}
-            text="Prepare Document for Signing"
-            color="blue"
-            inline
-          />
-        </Box>
-        <Box padding={3}>
-          <Heading size="md">{`Review Signed Documents`}</Heading>
-        </Box>
-        <Box padding={3}>
-          <SignedList />
-        </Box>
-      </Container>
-    </div>
+    // <div>
+
+    //   <Container>
+    //     <Box padding={3}>
+    //       <Heading size="md">{`Sign   Documents`}</Heading>
+    //     </Box>
+    //     <Box padding={3}>
+    //       <SignList />
+    //     </Box>
+    //     <Box padding={3}>
+    //       <Heading size="md">{`Prepare Document`}</Heading>
+    //     </Box>
+    //     <Box padding={2}>
+    //       <Button
+    //         onClick={event => {
+    //           navigate(`/assignUsers`);
+    //         }}
+    //         text="Prepare Document for Signing"
+    //         color="blue"
+    //         inline
+    //       />
+    //     </Box>
+    //     <Box padding={3}>
+    //       <Heading size="md">{`Review Signed Documents`}</Heading>
+    //     </Box>
+    //     <Box padding={3}>
+    //       <SignedList />
+    //     </Box>
+    //   </Container>
+    // </div>
+    <SignList/>
   );
 };
 export default ProfilePage;
