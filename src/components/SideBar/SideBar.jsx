@@ -9,7 +9,7 @@ const SideBar = ({ children }) => {
           Received Documents{" "}
         </a>
         <a href="/signedList">Send Documents</a>
-        <a href="/prepareDocument">Prepare Document</a>
+        <a href="/assignUsers">Prepare Document</a>
         </div>
 
       </div>
